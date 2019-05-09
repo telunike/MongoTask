@@ -1,6 +1,7 @@
 package com.cjq.entity;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 @Document(collection = "user")
 public class Student {
 
+    @Id
     private String stuno;
 
     private String name;

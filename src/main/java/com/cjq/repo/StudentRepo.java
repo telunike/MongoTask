@@ -14,4 +14,10 @@ public interface StudentRepo extends MongoRepository<Student, String> {
      * @return
      */
     Student findByStuno(String stuno);
+
+    /**
+     * 根据学号删除学生
+     * @param stuno
+     */
+    void deleteByStuno(String stuno);
 }
